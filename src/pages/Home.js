@@ -1,6 +1,13 @@
-const Home = () => {
-    return <h1>Landing Page</h1>;
-  };
-  
-  export default Home;
-  
+import React from 'react';
+import Profile from '../components/Profile';
+
+
+function Home() {
+  return (
+    <div className="">
+      <Profile/>
+    </div>
+  )
+}
+
+export default Home
