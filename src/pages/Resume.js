@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Pdfviewer from '../components/Pdfviewer'
+
 
 function Resume() {
   return (
-    <div className="text-sky-800">
-        <p>Resume</p>
-    </div>
+   <Pdfviewer/>
   )
 }
 
