@@ -1,13 +1,34 @@
 import React from 'react'
-import picture from '../assets/profilepic.jpg'
-import '../App.css'
+import { Carousel } from 'react-carousel-minimal';
+import {data, captionStyle, slideNumberStyle} from '../assets/carousel/carousel.js'
+
 
 function Profile() {
+   
   return (
-    <div >
-        <h1 className='text-sky-500 font-quicksand'> Big Boy</h1>
-        <img src={picture} alt='Good Lookin Son of a Gun'/>
-    </div>
+    <>
+          <Carousel
+            data={data}
+            time={5000}
+            width="w-screen"
+            height="500px"
+            captionStyle={captionStyle}
+            radius="10px"
+            slideNumber={true}
+            slideNumberStyle={slideNumberStyle}
+            captionPosition="bottom"
+            automatic={true}
+            dots={true}
+            pauseIconColor="white"
+            pauseIconSize="40px"
+            slideBackgroundColor="darkgrey"
+            slideImageFit="cover"
+            style={{
+              textAlign: "center",
+              maxWidth: "flex",
+            }}
+          />
+  </>
   )
 }
 
