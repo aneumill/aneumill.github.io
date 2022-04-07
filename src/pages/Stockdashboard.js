@@ -1,7 +1,24 @@
 import '../index.css'
 import React from 'react'
+
 const Stockdashboard = () => {
-  return <h1 className="text-red align-middle">Stock App</h1>;
+  return(
+
+      <>
+    <main class="mb-auto h-10 bg-green-500">
+
+      
+
+
+
+
+      
+    </main>
+         
+    </> 
+
+  )
+    
 };
 
 export default Stockdashboard;
