@@ -7,7 +7,7 @@ function Navigation() {
           <p className="font-sans text-xl p-10"> Adam's Personal Website</p>
           <div className='text-xl p-10'>
               <Link className="p-10 " to="/Home">Home</Link>
-              <Link clasName="p-10 " to="/Resume">Resume</Link>
+              <Link className="p-10 " to="/Resume">Resume</Link>
               <Link className="p-10" to="/Stockdashboard">Dashboard</Link>
           </div>
       </nav>

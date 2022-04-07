@@ -1,24 +1,22 @@
-import '../index.css'
-import React from 'react'
+import { useState } from "react";
+import "../App.css";
+import Dashboard from "../components/Dashboard";
+import StockContext from "../context/StockContext";
 
-const Stockdashboard = () => {
-  return(
+function Stockdashboard() {
+  const [stockSymbol, setStockSymbol] = useState("FB");
 
-      <>
-    <main class="mb-auto h-10 bg-green-500">
-
-      
-
-
-
-
-      
-    </main>
-         
-    </> 
+  return (<>
+    <StockContext.Provider value={{ stockSymbol, setStockSymbol }}>
+      <Dashboard />
+    </StockContext.Provider>
+  </>
 
   )
-    
+
+
+
+
 };
 
 export default Stockdashboard;
