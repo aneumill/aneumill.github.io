@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
-import StockOverview from "../components/StockOverview";
-import Details from "../components/Details";
-import Chart from "../components/Chart";
-import Stockheader from "../components/Stockheader";
-import StockContext from "../context/StockContext";
-import { fetchStockDetails, fetchQuote } from "../utils/api/stockapi";
+import StockOverview from "./StockOverview";
+import Details from "./Details";
+import Chart from "./Chart";
+import Stockheader from "./Stockheader";
+import StockContext from "../../context/StockContext";
+import { fetchStockDetails, fetchQuote } from "../../utils/api/stockapi";
 
 const Dashboard = () => {
   const { stockSymbol } = useContext(StockContext);

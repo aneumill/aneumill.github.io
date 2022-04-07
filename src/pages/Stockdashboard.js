@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../App.css";
-import Dashboard from "../components/Dashboard";
+import Dashboard from "../components/stocks/Dashboard";
 import StockContext from "../context/StockContext";
 
 function Stockdashboard() {
@@ -13,10 +13,6 @@ function Stockdashboard() {
   </>
 
   )
-
-
-
-
 };
 
 export default Stockdashboard;

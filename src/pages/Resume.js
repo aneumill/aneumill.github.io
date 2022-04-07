@@ -1,5 +1,5 @@
 import React from 'react';
-import Pdfviewer from '../components/Pdfviewer'
+import Pdfviewer from '../components/pdf/Pdfviewer.js'
 
 
 function Resume() {

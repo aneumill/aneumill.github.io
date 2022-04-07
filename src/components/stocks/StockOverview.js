@@ -1,5 +1,5 @@
 import React from "react";
-import Box from "./Box";
+import Box from "../stocks/Box";
 
 const StockOverview = ({ symbol, price, change, changePercent, currency }) => {
   return (

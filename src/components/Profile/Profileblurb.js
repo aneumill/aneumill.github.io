@@ -1,6 +1,6 @@
 import React from 'react'
-import BYUIMG from '../assets/BYUIS.jpg'
-import AWS from '../assets/AWS.png'
+import BYUIMG from '../../assets/profile/BYUIS.jpg'
+import AWS from '../../assets/profile/AWS.png'
 
 function profileblurb() {
     return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import Viewer, { Worker } from '@phuocng/react-pdf-viewer';
 import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
-import filePDF from '../assets/resume.pdf'
+import filePDF from '../../assets/resume.pdf'
 
 function pdfviewer() {
   return (

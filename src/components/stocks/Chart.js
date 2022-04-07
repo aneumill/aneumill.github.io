@@ -10,14 +10,14 @@ import {
   Tooltip,
 } from "recharts";
 
-import StockContext from "../context/StockContext";
-import { fetchHistoricalData } from "../utils/api/stockapi";
+import StockContext from "../../context/StockContext";
+import { fetchHistoricalData } from "../../utils/api/stockapi";
 import {
   createDate,
   convertDateToUnixTimestamp,
   convertUnixTimestampToDate,
-} from "../utils/helpers/date-helper";
-import { chartConfig } from "../constants/config";
+} from "../../utils/helpers/date-helper";
+import { chartConfig } from "../../constants/config";
 
 
 const Chart = () => {

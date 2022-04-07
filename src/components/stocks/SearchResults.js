@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import StockContext from "../context/StockContext";
+import StockContext from "../../context/StockContext";
 
 const SearchResults = ({ results }) => {
 

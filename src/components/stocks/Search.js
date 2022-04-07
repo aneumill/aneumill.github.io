@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { searchSymbol } from "../utils/api/stockapi";
-import SearchResults from "./SearchResults";
+import { searchSymbol } from "../../utils/api/stockapi";
+import SearchResults from "../stocks/SearchResults";
 import { SearchIcon, XIcon } from "@heroicons/react/solid";
 
 const Search = () => {
