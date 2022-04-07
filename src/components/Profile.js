@@ -1,7 +1,7 @@
 import React from 'react'
 import { Carousel } from 'react-carousel-minimal';
 import {data, captionStyle, slideNumberStyle} from '../assets/carousel/carousel.js'
-
+import Profileblurb from './Profileblurb.js';
 
 function Profile() {
    
@@ -28,6 +28,7 @@ function Profile() {
               maxWidth: "flex",
             }}
           />
+          <Profileblurb/>
   </>
   )
 }

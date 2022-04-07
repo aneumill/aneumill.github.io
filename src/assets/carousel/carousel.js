@@ -6,7 +6,7 @@ import BYU from './pics/BYU.jpg'
 export const data = [
   {
     image: `${BYU}`,
-    caption: "My Alma Matter: Brigham Young University"
+    caption: "My Alma Matter:Brigham Young University"
   },
   {
     image: `${Eger}`,
