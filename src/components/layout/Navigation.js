@@ -4,7 +4,7 @@ function Navigation() {
   return (
       <>
       <nav className="flex justify-between items-center h-20 bg-white text-black shadow-lg font-mono ">
-          <p className="font-sans text-xl p-10"> Adam's Personal Website</p>
+          <p className="font-sans text-xl p-10 font-bold"> Adam's Personal Website</p>
           <div className='text-xl p-10'>
               <Link className="p-10 " to="/Home">Home</Link>
               <Link className="p-10 " to="/Resume">Resume</Link>

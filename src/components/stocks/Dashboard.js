@@ -4,6 +4,7 @@ import Details from "./Details";
 import Chart from "./Chart";
 import Stockheader from "./Stockheader";
 import StockContext from "../../context/StockContext";
+import Modal from "./Modal"
 import { fetchStockDetails, fetchQuote } from "../../utils/api/stockapi";
 
 const Dashboard = () => {
@@ -39,12 +40,18 @@ const Dashboard = () => {
   }, [stockSymbol]);
 
   return (
-    <div
-      className={`h-screen grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-8 md:grid-rows-7 xl:grid-rows-5 auto-rows-fr gap-6 p-10 font-quicksand `}
-    >
-      <div className="col-span-1 md:col-span-2 xl:col-span-3 row-span-1 flex justify-start items-center">
-        <Stockheader name={stockDetails.name} />
-      </div>
+    <>
+    <center>
+      <div>
+           <h1 className="inline font-medium leading-tight text-5xl mt-0 mb-2 p-10 text-black pt-20">Stock Dashboard <Modal/></h1>
+    </div>
+    
+    <div className="p-10">
+      <Stockheader name={stockDetails.name} />
+    </div>
+    
+  </center>
+    <div className={`h-screen grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-8 md:grid-rows-7 xl:grid-rows-5 auto-rows-fr gap-6 p-10 font-quicksand `}>
       <div className="md:col-span-2 row-span-4">
         <Chart />
       </div>
@@ -61,6 +68,7 @@ const Dashboard = () => {
         <Details details={stockDetails} />
       </div>
     </div>
+    </>
   );
 };
 

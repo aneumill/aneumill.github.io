@@ -1,11 +1,10 @@
 import React from "react";
 import Search from "../stocks/Search";
 
-const Stockheader = ({ name }) => {
+const Stockheader = () => {
   return (
     <>
-      <div className="xl:px-32">
-        <h1 className="text-5xl">{name}</h1>
+      <div className="xl:px-32 bg-white">
         <Search />
       </div>
     </>
