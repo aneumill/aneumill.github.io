@@ -5,31 +5,36 @@ const Details = ({ details }) => {
 
 
   const detailsList = {
-    name: "Name",
-    country: "Country",
-    currency: "Currency",
-    marketCapitalization: "Market Capitalization",
-    finnhubIndustry: "Industry",
+    name: "",
+    logo: "",
+    marketCapitalization: "",
   };
 
   const convertMillionToBillion = (number) => {
     return (number / 1000).toFixed(2);
   };
+  const setImage = (image) =>
+  {
+    return <img src={image}/>
+  }
 
   return (
     <Box>
       <ul
-        className={`w-full h-full flex flex-col justify-between divide-y-1`}
+        className={`w-full h-full flex flex-col justify-center divide-y-1`}
       >
         {Object.keys(detailsList).map((item) => {
           return (
-            <li key={item} className="flex-1 flex justify-between items-center sm:text-sm">
+            <li key={item} className="flex-1 flex justify-center items-center sm:text-sm">
               <span>{detailsList[item]}</span>
               <span className="font-bold">
-                {item === "marketCapitalization"
-                  ? `${convertMillionToBillion(details[item])}B`
-                  : details[item]}
+                {
+                item === "marketCapitalization" ? <h1 className="text-xl">${convertMillionToBillion(details[item])}B Market Cap </h1>:
+                item === 'logo' ? <img src={details[item]} alt={`${details[item]}'s Logo`} className="h-96 w-96" /> 
+                : <h1 className="text-lg">{details[item]}</h1>
+        }
               </span>
+            
             </li>
           );
         })}
