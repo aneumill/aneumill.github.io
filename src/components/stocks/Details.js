@@ -8,8 +8,6 @@ const Details = ({ details }) => {
     name: "Name",
     country: "Country",
     currency: "Currency",
-    exchange: "Exchange",
-    ipo: "IPO Date",
     marketCapitalization: "Market Capitalization",
     finnhubIndustry: "Industry",
   };
@@ -25,7 +23,7 @@ const Details = ({ details }) => {
       >
         {Object.keys(detailsList).map((item) => {
           return (
-            <li key={item} className="flex-1 flex justify-between items-center">
+            <li key={item} className="flex-1 flex justify-between items-center sm:text-sm">
               <span>{detailsList[item]}</span>
               <span className="font-bold">
                 {item === "marketCapitalization"
