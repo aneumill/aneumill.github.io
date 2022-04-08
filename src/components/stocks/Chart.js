@@ -98,8 +98,8 @@ const Chart = () => {
             fill="white"
             strokeWidth={0.95}
           />
-          <XAxis dataKey="date" tick={false} />
-          <YAxis domain={[0,"dataMax"]} />
+          <XAxis tick={false} />
+          <YAxis domain={["dataMin", "dataMax"]} />
         </AreaChart>
       </ResponsiveContainer>
     </Box>
