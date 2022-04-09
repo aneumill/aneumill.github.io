@@ -19,3 +19,5 @@ Other Features
 - Dynamic Navigation header
 - Footer component 
 - Styling done with Tailwind.css
+
+Site Hosted at https://grand-rabanadas-195685.netlify.app
