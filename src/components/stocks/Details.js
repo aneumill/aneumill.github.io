@@ -14,10 +14,6 @@ const Details = ({ details }) => {
   const convertMillionToBillion = (number) => {
     return (number / 1000).toFixed(2);
   };
-  const setImage = (image) =>
-  {
-    return <img src={image}/>
-  }
 
   return (
     <Box>

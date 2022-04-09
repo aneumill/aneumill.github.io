@@ -4,7 +4,6 @@ import Details from "./Details";
 import Chart from "./Chart";
 import Stockheader from "./Stockheader";
 import StockContext from "../../context/StockContext";
-import Search from './Search'
 import Modal from "./Modal"
 import { fetchStockDetails, fetchQuote } from "../../utils/api/stockapi";
 
