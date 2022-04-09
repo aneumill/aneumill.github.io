@@ -1,11 +1,14 @@
 import React from 'react';
 import Profile from '../components/Profile/Profile';
-
+import Navigation from '../components/layout/Navigation';
+import Footer from '../components/layout/Footer'
 
 function Home() {
   return (
     <div className="">
-      <Profile/>
+      <Navigation/>
+        <Profile/>
+      <Footer/>
     </div>
   )
 }

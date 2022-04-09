@@ -4,6 +4,7 @@ import Details from "./Details";
 import Chart from "./Chart";
 import Stockheader from "./Stockheader";
 import StockContext from "../../context/StockContext";
+import Search from './Search'
 import Modal from "./Modal"
 import { fetchStockDetails, fetchQuote } from "../../utils/api/stockapi";
 
@@ -43,11 +44,8 @@ const Dashboard = () => {
     <>
     <center>
       <div>
-           <h1 className="inline font-medium leading-tight text-5xl mt-0 mb-2 p-10 text-black pt-20">Stock Dashboard <Modal/></h1>
-    </div>
-    
-    <div className="p-10">
-      <Stockheader name={stockDetails.name} />
+           <h1 className="font-medium leading-tight text-5xl mb-2  text-black pt-10">FinnHub API Stock Dashboard <Modal/></h1>
+           <Stockheader name={stockDetails.name} />
     </div>
     
   </center>

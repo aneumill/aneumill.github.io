@@ -27,13 +27,13 @@ const Details = ({ details }) => {
       >
         {Object.keys(detailsList).map((item) => {
           return (
-            <li key={item} className="flex-1 flex justify-center items-center w-full h-full">
+            <li key={item} className="flex-1 flex justify-center items-center w-full h-full text-2xl">
               <span>{detailsList[item]}</span>
               <span className="font-bold text-sm lg:text-lg xl:text-xl">
                 {
                 item === "marketCapitalization" ? <h1>${convertMillionToBillion(details[item])}B Market Cap </h1>:
                 item === 'logo' ? <img src={details[item]} alt={`${details[item]}'s Logo`} className="flex w-32 h-32" /> 
-                : <h1>{details[item]}</h1>
+                : <h1 className="">{details[item]}</h1>
         }
               </span>
             

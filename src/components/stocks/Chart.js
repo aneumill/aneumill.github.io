@@ -85,8 +85,6 @@ const Chart = () => {
       </ul>
       <ResponsiveContainer>
         <AreaChart data={data}>
-          <defs>
-          </defs>
           <Tooltip
             contentStyle={{ backgroundColor: "white" }}
             itemStyle={{ color: "black" }}
@@ -98,7 +96,7 @@ const Chart = () => {
             fill="white"
             strokeWidth={0.95}
           />
-          <XAxis tick={false} />
+          <XAxis tick={false}  />
           <YAxis domain={["dataMin", "dataMax"]} />
         </AreaChart>
       </ResponsiveContainer>
